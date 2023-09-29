@@ -8,6 +8,6 @@ package com.mycompany.chiquitinas_sa;
  *
  * @author lizan
  */
-public class Remolacha extends Producto {
+public class Remolacha extends ProductoTO {
     
 }

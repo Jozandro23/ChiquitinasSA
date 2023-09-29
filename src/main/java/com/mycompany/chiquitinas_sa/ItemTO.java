@@ -10,13 +10,13 @@ public class ItemTO {
     //Atributos
     private int consecutivo;
     private double cantidad;
-    private Producto producto;
+    private ProductoTO producto;
 
     //constructores
     public ItemTO() {
     }
 
-    public ItemTO(int consecutivo, double cantidad, Producto producto) {
+    public ItemTO(int consecutivo, double cantidad, ProductoTO producto) {
         this.consecutivo = consecutivo;
         this.cantidad = cantidad;
         this.producto = producto;
@@ -39,11 +39,11 @@ public class ItemTO {
         this.cantidad = cantidad;
     }
 
-    public Producto getProducto() {
+    public ProductoTO getProducto() {
         return producto;
     }
 
-    public void setProducto(Producto producto) {
+    public void setProducto(ProductoTO producto) {
         this.producto = producto;
     }
     

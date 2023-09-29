@@ -8,16 +8,16 @@ package com.mycompany.chiquitinas_sa;
  *
  * @author lizan
  */
-public class Producto {
+public class ProductoTO {
     
     private int id;
     private String nombre;
     private double precio;
 
-    public Producto() {
+    public ProductoTO() {
     }
 
-    public Producto(int id, String nombre, double precio) {
+    public ProductoTO(int id, String nombre, double precio) {
         this.id = id;
         this.nombre = nombre;
         this.precio = precio;
