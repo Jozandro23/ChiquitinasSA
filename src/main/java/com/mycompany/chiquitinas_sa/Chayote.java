@@ -8,7 +8,7 @@ package com.mycompany.chiquitinas_sa;
  *
  * @author lizan
  */
-public class Chayote extends Producto implements Taxeable{
+public class Chayote extends ProductoTO implements Taxeable{
 
     @Override
     public double getImpuesto() {
