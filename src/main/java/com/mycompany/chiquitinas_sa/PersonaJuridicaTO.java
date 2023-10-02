@@ -4,11 +4,13 @@
  */
 package com.mycompany.chiquitinas_sa;
 
+import java.io.Serializable;
+
 /**
  *
  * @author lizan
  */
-public class PersonaJuridicaTO extends ClienteTO {
+public class PersonaJuridicaTO extends ClienteTO implements Serializable{
     
     //Atributos
     private String contacto;

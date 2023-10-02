@@ -4,8 +4,8 @@
  */
 package com.mycompany.chiquitinas_sa;
 
-import com.mycompany.chiquitinas_sa.CapaDatos.Crud;
-import com.mycompany.chiquitinas_sa.CapaDatos.Service;
+import com.mycompany.chiquitinas_sa.Crud;
+import com.mycompany.chiquitinas_sa.Service;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 

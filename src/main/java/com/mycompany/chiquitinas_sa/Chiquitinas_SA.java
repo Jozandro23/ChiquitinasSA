@@ -28,11 +28,11 @@ public class Chiquitinas_SA {
             if (opc == 1){
                 System.out.println("Ingrese los datos del comprador");
                 System.out.print("Nombre --> ");
-                String nom = lector.nextLine();
+                String nom = lector.next();
                 System.out.print("Provincia --> ");
-                String dir = lector.nextLine();
+                String dir = lector.next();
                 System.out.print("Email --> ");
-                String email = lector.nextLine();
+                String email = lector.next();
                 
                 
                 
