@@ -13,14 +13,16 @@ public class ProductoTO {
     private int id;
     private String nombre;
     private double precio;
+    private int impuesto;
 
     public ProductoTO() {
     }
 
-    public ProductoTO(int id, String nombre, double precio) {
+    public ProductoTO(int id, String nombre, double precio, int impuesto) {
         this.id = id;
         this.nombre = nombre;
         this.precio = precio;
+        this.impuesto = impuesto;
     }
 
     public int getId() {
@@ -46,6 +48,16 @@ public class ProductoTO {
     public void setPrecio(double precio) {
         this.precio = precio;
     }
+
+    public int getImpuesto() {
+        return impuesto;
+    }
+
+    public void setImpuesto(int impuesto) {
+        this.impuesto = impuesto;
+    }
+
+    
     
 
     

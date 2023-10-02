@@ -54,7 +54,8 @@ public class ClienteService extends Service implements Crud<ClienteTO> {
 
         System.out.println("Se actualizó con exito");
 
-        stmt.close();
+        close(stmt);
+        close(conn);
 
     }
 
