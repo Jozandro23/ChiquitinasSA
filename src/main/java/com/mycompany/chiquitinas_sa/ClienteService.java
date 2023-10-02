@@ -31,13 +31,18 @@ public class ClienteService extends Service implements Crud<ClienteTO>{
 
     @Override
     public void delete(ClienteTO clienteTO) throws Exception {
-        //super.conectarBBDD();
+        try{
+                    //super.conectarBBDD();
             PreparedStatement stmt = super.getConexion().prepareStatement("DELETE FROM cliente WHERE ID=?");
             stmt.setInt(1, clienteTO.getId());
             stmt.executeUpdate();
 
             stmt.close();
             //super.getConexion().close();
+        } catch (SQLException ex){
+            System.out.println("Error al eliminar usuario: " + ex.getMessage());
+        }
+
     }
     
     public void actualizar(ClienteTO clienteTO) throws Exception{

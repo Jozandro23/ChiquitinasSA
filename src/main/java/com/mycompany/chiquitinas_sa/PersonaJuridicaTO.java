@@ -18,8 +18,8 @@ public class PersonaJuridicaTO extends ClienteTO {
         this.contacto = contacto;
     }
 
-    public PersonaJuridicaTO(String contacto, int id, String nombre, String correo) {
-        super(id, nombre, correo);
+    public PersonaJuridicaTO(String contacto, int id, String nombre, String correo, String direccion) {
+        super(id, nombre, correo, direccion);
         this.contacto = contacto;
     }
 

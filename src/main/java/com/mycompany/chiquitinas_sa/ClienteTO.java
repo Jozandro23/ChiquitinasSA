@@ -19,11 +19,14 @@ public class ClienteTO {
     public ClienteTO() {
     }
 
-    public ClienteTO(int id, String nombre, String correo) {
+    public ClienteTO(int id, String nombre, String correo, String direccion) {
         this.id = id;
         this.nombre = nombre;
         this.correo = correo;
+        this.direccion = direccion;
     }
+    
+    
     
     //Metodos
     public int getId() {
