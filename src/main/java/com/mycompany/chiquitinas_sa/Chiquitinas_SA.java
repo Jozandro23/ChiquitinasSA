@@ -19,7 +19,14 @@ public class Chiquitinas_SA {
         ClienteService cliente = new ClienteService();
         cliente.insert(clTO);
         
-        OrdenTO ordTO = new OrdenTO(0, new Date, clTO);
+        int año = 2023;
+        int mes = 10;
+        int dia = 03;
+        
+        Date date = new Date(año, mes, dia);
+        
+        OrdenTO ordTO = new OrdenTO(0, date, clTO);
+        OrdenService orden = new OrdenService();
         
         ProductoTO prTO = new ProductoTO(0, "Remolacha", 100, 0);
         
