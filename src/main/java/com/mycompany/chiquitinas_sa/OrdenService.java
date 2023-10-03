@@ -5,6 +5,7 @@
 package com.mycompany.chiquitinas_sa;
 
 import java.sql.Connection;
+import java.sql.Date;
 import java.sql.PreparedStatement;
 
 /**
@@ -19,7 +20,7 @@ public class OrdenService extends Service implements Crud<OrdenTO>{
         Connection conn = getConnection();
         PreparedStatement stmt = conn.prepareStatement("INSERT INTO chiquitinas.orden VALUES (?,?,?,?)");
         stmt.setInt(1, ordenTO.getId());
-        stmt.setDate(2, ordenTO.getFecha());
+        stmt.setDate(2, (Date) ordenTO.getFecha());
         stmt.setInt(3, ordenTO.getCliente());
         stmt.setInt(4, ordenTO.getItem);
         stmt.execute();
