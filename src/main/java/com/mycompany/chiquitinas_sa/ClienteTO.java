@@ -12,18 +12,18 @@ public class ClienteTO {
     //Atributos
     protected int id;
     protected String nombre;
-    protected String correo;
     protected String direccion;
+    protected String correo;
     
     //Constructores
     public ClienteTO() {
     }
 
-    public ClienteTO(int id, String nombre, String correo, String direccion) {
+    public ClienteTO(int id, String nombre, String direccion, String correo) {
         this.id = id;
         this.nombre = nombre;
-        this.correo = correo;
-        this.direccion = direccion;
+        this.correo = direccion;
+        this.direccion = correo;
     }
     
     

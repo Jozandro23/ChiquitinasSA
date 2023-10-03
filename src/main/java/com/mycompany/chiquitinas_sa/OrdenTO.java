@@ -60,17 +60,30 @@ public class OrdenTO {
     @Override
     public String toString() {
         
+        
+        
         StringBuffer sb = new StringBuffer();
-        sb.append("==========================================================\n");
-        sb.append("=======================CHIQUITINAS========================\n");
-        sb.append("==========================================================\n");
-        sb.append("Nombre: \t " + this.cliente.getNombre());
-        sb.append("Direccion: \t " + this.cliente.getCorreo());
+        sb.append("====================================================\n");
+        sb.append("==================== CHIQUITINAS ===================\n");
+        sb.append("====================================================\n");
+        sb.append("Nombre:\t"+this.cliente.getNombre()+"\tNo. Orden: "+this.getId()+"\n");
+        sb.append("Dirección:"+this.getCliente().getDireccion()+"\tCorreo: "+this.getCliente().getCorreo()+"\n");
+        sb.append("====================================================\n");
+        for (ItemTO item : this.listaItem) {
+            double impuesto = 0.0;
+            if (item.getProducto() instanceof Remolacha) {
+                impuesto = ((Remolacha)item.getProducto()).getImpuesto();
+            }
+            
+            
+            sb.append(item.getConsecutivo() + " - "
+                    + item.getCantidad() + " - "
+                    + item.getProducto().getNombre() + " - "
+                    + item.getProducto().getPrecio()+ 
+                    " - "+impuesto+"\n");
+        }
         
-        
-        
-        
-        return sb.toString();
+        return sb.toString() ;
     }
     
     

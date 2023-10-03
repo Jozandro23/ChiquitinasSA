@@ -29,7 +29,7 @@ public class Service {
         
         //----------------- AQUÍ TUVE QUE CAMBIAR EL URL PORQUE ME DABA ERROR -------------------------
         conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/chiquitinas?zeroDateTimeBehavior=CONVERT_TO_NULL", "root", "root");
-        System.out.println("CONEXION: " + conn);
+        //System.out.println("CONEXION: " + conn);
         return conn;
     }
 
